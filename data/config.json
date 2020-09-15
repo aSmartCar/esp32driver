@@ -1,0 +1,105 @@
+{
+    "wifi":{
+        "hostname": "ESP32-Driver",
+        "enableAP": true,
+        "APSSID": "ESP32-Driver",
+        "APPass": "12345678",
+        "SSID": "",
+        "password": ""
+    },
+    "udp":{
+        "remotePort":10000,
+        "localPort": 10001,
+        "broadcast": false,
+        "remoteIP": ""
+    },
+    "remote":{
+        "minPulse": -1.0,
+        "maxPulse": 1.0,
+        "velocityDivider": 1.0,
+        "steeringTrim": 0.0,
+        "hysteresis" : 0.0
+    },
+    "interfaces":{
+        "i2c": {
+            "enabled": false,
+            "clock": 0
+        },
+        "can": {
+            "enabled": false
+        },
+        "uart": {
+            "enabled": false
+        },
+        "ws2812": {
+            "enabled": false,
+            "count": 0,
+            "max": 5,
+            "colors": []
+        }
+    },
+    "sensors": {
+        "akku0": {
+            "enabled": false,
+            "voltage": 0
+        },
+        "akku1": {
+            "enabled": false,
+            "voltage": 0
+        },
+        "sharp0": {
+            "enabled": false,
+            "clearance": 2000
+        },
+        "sharp1": {
+            "enabled": false,
+            "clearance": 2000
+        },
+        "sharp2": {
+            "enabled": false,
+            "clearance": 2000
+        },
+        "sharp3": {
+            "enabled": false,
+            "clearance": 2000
+        },
+        "us0": {
+            "enabled": false,
+            "clearance": 10
+        },
+        "us1": {
+            "enabled": false,
+            "clearance": 10
+        }
+    },
+    "actuators": {
+        "motorA": {
+            "enabled": true,
+            "frequenz": 2000
+        },
+        "motorB": {
+            "enabled": true,
+            "frequenz": 2000
+        },
+        "servo0":{
+            "enabled":false,
+            "startDuty": 0,
+            "frequenz": 50
+        },
+        "servo1": {
+            "enabled":false,
+            "startDuty": 0,
+            "frequenz": 50
+        },
+        "servo2": {
+            "enabled":false,
+            "startDuty": 0,
+            "frequenz": 50
+        },
+        "servo3": {
+            "enabled":false,
+            "startDuty": 0,
+            "frequenz": 50
+        }
+    }
+}
